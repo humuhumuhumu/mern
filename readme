@@ -19,3 +19,4 @@ route createpage to /createpage
 install react-router-dom
 create elements of website
 install zustand
+createpage button calls backend create product
