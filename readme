@@ -1,0 +1,21 @@
+backend
+
+vite
+config has connection to mongodb function
+controller has all api functions of product, get, create, delete, update
+model has the schema of the product
+route has given the url, decides which api function
+server starts with environment config, then start the app on express, port,
+then declares the prefix for products,
+then listens on the port, if there is a connection then connect to DB
+
+frontend
+
+install chakra
+contain frontend app with chakra in main
+app contains a global navigation bar (by being above everything)
+route homepage to /
+route createpage to /createpage
+install react-router-dom
+create elements of website
+install zustand
