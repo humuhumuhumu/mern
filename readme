@@ -24,3 +24,16 @@ added toaster to notify you the status of the product when you create it
 added cards to see products
 added icons and name and image and price
 linked delete button to the delete api
+utilized dialog from chakra ui to do functionality of the edit/update icons
+
+deploying the app
+within the backend server
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static(path.join(_dirname, "/frontend/dist")));
+	app.get("*", (req, res) => {
+		res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
+	});
+}
+^ if production that means it is deployable ie the build
+it will take the front end build stored in frontend dist and make it static
+then handle any get requests and send them to the frontend dist indexedDB.html
