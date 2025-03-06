@@ -20,3 +20,7 @@ install react-router-dom
 create elements of website
 install zustand
 createpage button calls backend create product
+added toaster to notify you the status of the product when you create it
+added cards to see products
+added icons and name and image and price
+linked delete button to the delete api
